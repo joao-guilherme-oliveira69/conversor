@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>conversor</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js" defer></script>
+</head>
+<body>
+  <main>
+    <label for="real"><img src="icons/source.gif" class="coin_gif" id="cois-gif" alt=""></label>
+    <input type="number" min="0" placeholder="Valor em Reais"  name="real" id="real">
+    <br><br>
+    <select name="coins_selector" id="coin_selector">
+      <option value="dolar" id="dolar">Dólar Americano (USD)</option>
+      <option value="EUR" id="euro">Euro (EUR)</option>
+      <option value="GBP" id="libra">Libra Esterlina (GBP)</option>
+      <option value="JPY" id="iene">Iene Japonês (JPY)</option>
+    </select>
+    <br><br>
+    <label for="convert_coin"><img src="icons/source.gif" class="coin_gif"  id="cois-gif" alt=""></label>
+    <input name="convert_coin" disabled="true" type="number" mim="0" placeholder="0,00" id="convert_coin">
+    <br><br>
+    <button id="convert_btn">CONVERTER</button>
+    
+  </main>
+    
+  </body>
+</body>
+</html>

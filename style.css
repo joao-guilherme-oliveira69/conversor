@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(images/DALL·E\ 2024-09-16\ 22.49.06\ -\ A\ background\ image\ for\ a\ currency\ converter\ theme\,\ featuring\ a\ soft\ and\ abstract\ design\ with\ various\ currency\ symbols\ like\ $\,\ €\,\ ¥\,\ and\ £\ scattered\ su.webp)
+  ;
+  background-position: center;          
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(3px); 
+  background: rgba(255, 255, 255, 0.2); 
+  z-index: -1; 
+  
+}
+
+
+main{
+  min-height: 300px;
+  justify-content: center;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(84, 72, 72, 0.1);
+  padding: 20px;
+  max-width: 800px;
+  align-items: center;
+  min-height: 100vh; 
+  display: flex ;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  margin: 0px;
+}
+
+.coin_gif{
+  max-width: 30px;
+  
+}
+
+input[type="number"],
+select {
+    width: 80%; 
+    padding: 10px; 
+    margin: 10px 0; 
+    border-radius: 5px; 
+    border: 1px solid #ccc; 
+    background-color: #f9f9f9; 
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); 
+    font-size: 16px; 
+    transition: border-color 0.3s; 
+}
+
+button {
+  width: 80%; 
+  padding: 12px; 
+  margin: 20px 0; 
+  background-color: #4CAF50; 
+  color: white; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  font-size: 16px; 
+  font-weight: bold; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.2s; 
+}
+
+button:hover {
+  background-color: #45a049; 
+  transform: scale(1.05); 
+}
+
+button:active {
+  background-color: #3e8e41; 
+  transform: scale(0.95); 
+}
